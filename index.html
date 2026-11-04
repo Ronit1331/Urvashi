@@ -2,34 +2,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#ff8eaa">
+
 <title>For Urvashi ❤️</title>
 
+<!-- Nunito Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
 <style>
+
+/* GENERAL RESET */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+/* BODY */
 body {
-  font-family: cursive;
-  font-weight:700px ;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
   min-height: 100vh;
   min-height: 100dvh;
   padding: 20px 14px;
   display: flex;
   justify-content: center;
   align-items: center;
- 
   color: #842044;
   background: linear-gradient(135deg, #ff758c, #ffb3c6, #ffc3a0);
   overflow-x: hidden;
 }
 
+/* MAIN CARD */
 .card {
   position: relative;
   z-index: 2;
@@ -43,6 +51,7 @@ body {
   box-shadow: 0 15px 45px rgba(105, 20, 55, 0.2);
 }
 
+/* PAGES */
 .page {
   display: none;
   animation: pageEnter 0.65s ease;
@@ -57,12 +66,14 @@ body {
     opacity: 0;
     transform: translateY(20px) scale(0.98);
   }
+
   to {
     opacity: 1;
     transform: translateY(0) scale(1);
   }
 }
 
+/* HEART */
 .main-heart {
   font-size: 65px;
   margin-bottom: 15px;
@@ -70,12 +81,19 @@ body {
 }
 
 @keyframes heartbeat {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.12); }
+  0%, 100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.12);
+  }
 }
 
+/* HEADINGS */
 h1 {
-  font-family: cursive;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 900;
   color: #d62965;
   font-size: clamp(28px, 7vw, 38px);
   line-height: 1.3;
@@ -83,37 +101,41 @@ h1 {
 }
 
 h2 {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 900;
   color: #d62965;
   font-size: clamp(25px, 6vw, 32px);
   margin: 16px 0;
 }
 
+/* PARAGRAPHS */
 .message {
-  font-family: cursive;
-  font-weight:700px ;
-  font-size: clamp(20px, 6vw, 28px);
-  line-height: 1.9;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1.85;
   margin: 15px 0;
 }
 
 .message2 {
-  font-family:cursive;
-  font-weight:700px ;
-  font-size: clamp(20px, 6vw, 28px);
-  line-height: 1.9;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.85;
   margin: 15px 0;
 }
 
+/* PROPOSAL QUESTION */
 .question {
-  font-family: cursive;
-  font-weight:700px ;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 900;
   color: #a91e50;
   font-size: clamp(22px, 5.5vw, 27px);
-  font-weight: bold;
   line-height: 1.5;
   margin: 25px 0 15px;
 }
 
+/* BUTTONS */
 .buttons {
   display: flex;
   flex-wrap: wrap;
@@ -128,8 +150,8 @@ button {
   border: none;
   border-radius: 30px;
   font-size: 16px;
-  font-weight: bold;
-  font-family: inherit;
+  font-weight: 800;
+  font-family: 'Nunito', sans-serif;
   cursor: pointer;
   touch-action: manipulation;
   transition: transform 0.2s, box-shadow 0.2s;
@@ -161,9 +183,10 @@ button:focus-visible {
   color: #a91e50;
 }
 
+/* GOODBYE SECTION */
 .goodbye-panel {
-  font-family: cursive;
-  font-weight:700px ;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
   margin-top: 30px;
   padding: 25px 8px;
   border-top: 2px solid #ffc1d4;
@@ -177,21 +200,26 @@ button:focus-visible {
   overflow-wrap: anywhere;
 }
 
+/* SIGNATURE */
 .signature {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
   margin-top: 20px;
   color: #a34b70;
-  font-style: italic;
   line-height: 1.8;
 }
 
+/* FOOTER */
 .footer {
-  font-family: cursive;
-  font-weight:700px ;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
   margin-top: 28px;
   color: #9b5270;
-  font-size: 12px;
+  font-size: 14px;
 }
 
+/* FLOATING HEARTS */
 .floating-heart {
   position: fixed;
   bottom: -45px;
@@ -205,32 +233,126 @@ button:focus-visible {
     transform: translateY(0) rotate(0deg);
     opacity: 0.95;
   }
+
   to {
     transform: translateY(-115vh) rotate(35deg);
     opacity: 0;
   }
 }
 
-@media (max-width: 380px) {
+/* TABLET RESPONSIVE */
+@media (max-width: 768px) {
+  body {
+    align-items: flex-start;
+  }
+
   .card {
-    padding: 26px 17px;
+    width: 100%;
+    max-width: 470px;
+  }
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 480px) {
+
+  body {
+    padding: 12px 10px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 470px;
+    padding: 24px 16px;
+    border-radius: 22px;
+  }
+
+  .main-heart {
+    font-size: 52px;
+  }
+
+  h1 {
+    font-size: 27px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .message {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.75;
+    margin: 13px 0;
+  }
+
+  .message2 {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.75;
+    margin: 13px 0;
+  }
+
+  .question {
+    font-size: 22px;
+    font-weight: 900;
+  }
+
+  .signature {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .footer {
+    font-size: 13px;
+  }
+
+  .buttons {
+    gap: 10px;
+  }
+
+  button {
+    min-height: 46px;
+    font-size: 15px;
+    padding: 11px 20px;
+  }
+
+  .goodbye-panel h1 {
+    font-size: 32px;
+  }
+}
+
+/* EXTRA SMALL MOBILE */
+@media (max-width: 360px) {
+
+  .card {
+    padding: 20px 13px;
   }
 
   .message {
     font-size: 15px;
   }
 
+  .message2 {
+    font-size: 16px;
+  }
+
+  .buttons {
+    gap: 8px;
+  }
+
   button {
-    padding: 12px 18px;
+    padding: 11px 17px;
   }
 }
 
+/* ACCESSIBILITY */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
   }
 }
+
 </style>
 </head>
 
@@ -266,6 +388,7 @@ button:focus-visible {
     </p>
 
     <div class="buttons">
+
       <button class="yes-button" onclick="showPage('yesPage')">
         YES ❤️
       </button>
@@ -273,6 +396,7 @@ button:focus-visible {
       <button class="no-button" onclick="showPage('noPage')">
         NO 🌷
       </button>
+
     </div>
 
   </section>
@@ -348,7 +472,7 @@ button:focus-visible {
       <br><br>
     </p>
 
-    <!-- ADDED DINNER PARAGRAPH -->
+    <!-- DINNER THANK-YOU MESSAGE -->
     <p class="message2">
       And thank you for that dinner with you. 🥹❤️
       Those two hours felt like heaven to me.
@@ -411,26 +535,27 @@ button:focus-visible {
 
 
 <script>
+
+// CHANGE PAGE
 function showPage(pageId) {
 
-  // Hide every page
   const pages = document.querySelectorAll(".page");
 
   pages.forEach(function(page) {
     page.classList.remove("active");
   });
 
-  // Display the selected page
   const selectedPage = document.getElementById(pageId);
-  selectedPage.classList.add("active");
 
-  // Scroll to the top after changing pages
+  if (selectedPage) {
+    selectedPage.classList.add("active");
+  }
+
   window.scrollTo({
     top: 0,
     behavior: "smooth"
   });
 
-  // Celebrate with hearts on the YES and NO pages
   if (pageId === "yesPage") {
     celebrateHearts(35);
   } else if (pageId === "noPage") {
@@ -439,8 +564,9 @@ function showPage(pageId) {
 }
 
 
-// Create a floating heart
+// CREATE FLOATING HEART
 function createHeart() {
+
   const heart = document.createElement("span");
 
   heart.className = "floating-heart";
@@ -451,7 +577,10 @@ function createHeart() {
     symbols[Math.floor(Math.random() * symbols.length)];
 
   heart.style.left = Math.random() * 100 + "vw";
-  heart.style.fontSize = (18 + Math.random() * 24) + "px";
+
+  heart.style.fontSize =
+    (18 + Math.random() * 24) + "px";
+
   heart.style.animationDuration =
     (3.5 + Math.random() * 3.5) + "s";
 
@@ -463,16 +592,19 @@ function createHeart() {
 }
 
 
-// Create multiple hearts for the celebration
+// CELEBRATION HEARTS
 function celebrateHearts(count) {
+
   for (let i = 0; i < count; i++) {
     setTimeout(createHeart, i * 100);
   }
+
 }
 
 
-// Gentle floating hearts in the background
+// BACKGROUND HEARTS
 setInterval(createHeart, 850);
+
 </script>
 
 </body>
