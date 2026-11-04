@@ -1,0 +1,472 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#ff8eaa">
+<title>For Urvashi ❤️</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: cursive;
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding: 20px 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #842044;
+  background: linear-gradient(135deg, #ff758c, #ffb3c6, #ffc3a0);
+  overflow-x: hidden;
+}
+
+.card {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 470px;
+  margin: auto;
+  padding: 32px 24px;
+  border-radius: 28px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 15px 45px rgba(105, 20, 55, 0.2);
+}
+
+.page {
+  display: none;
+  animation: pageEnter 0.65s ease;
+}
+
+.page.active {
+  display: block;
+}
+
+@keyframes pageEnter {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.main-heart {
+  font-size: 65px;
+  margin-bottom: 15px;
+  animation: heartbeat 1.3s infinite;
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.12); }
+}
+
+h1 {
+  font-family: cursive;
+  color: #d62965;
+  font-size: clamp(28px, 7vw, 38px);
+  line-height: 1.3;
+  margin-bottom: 18px;
+}
+
+h2 {
+  color: #d62965;
+  font-size: clamp(25px, 6vw, 32px);
+  margin: 16px 0;
+}
+
+.message {
+  font-family: cursive;
+  font-size: 18px;
+  line-height: 1.9;
+  margin: 15px 0;
+}
+
+.message2 {
+  font-family:cursive;
+  font-size: 22px;
+  line-height: 1.9;
+  margin: 15px 0;
+}
+
+.question {
+  font-family: cursive;
+  color: #a91e50;
+  font-size: clamp(22px, 5.5vw, 27px);
+  font-weight: bold;
+  line-height: 1.5;
+  margin: 25px 0 15px;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+button {
+  min-height: 48px;
+  padding: 13px 24px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: inherit;
+  cursor: pointer;
+  touch-action: manipulation;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+  transform: translateY(-3px);
+}
+
+button:focus-visible {
+  outline: 3px solid #842044;
+  outline-offset: 3px;
+}
+
+.yes-button {
+  background: #d62965;
+  color: white;
+  box-shadow: 0 6px 16px rgba(214, 41, 101, 0.3);
+}
+
+.no-button {
+  background: #ffe1eb;
+  color: #a91e50;
+}
+
+.back-button {
+  margin-top: 25px;
+  background: #ffe1eb;
+  color: #a91e50;
+}
+
+.goodbye-panel {
+  font-family: cursive;
+  margin-top: 30px;
+  padding: 25px 8px;
+  border-top: 2px solid #ffc1d4;
+  border-bottom: 2px solid #ffc1d4;
+}
+
+.goodbye-panel h1 {
+  font-size: clamp(34px, 9vw, 48px);
+  letter-spacing: 2px;
+  margin: 8px 0;
+  overflow-wrap: anywhere;
+}
+
+.signature {
+  margin-top: 20px;
+  color: #a34b70;
+  font-style: italic;
+  line-height: 1.8;
+}
+
+.footer {
+  font-family: cursive;
+  margin-top: 28px;
+  color: #9b5270;
+  font-size: 12px;
+}
+
+.floating-heart {
+  position: fixed;
+  bottom: -45px;
+  z-index: 1;
+  pointer-events: none;
+  animation: floatUp linear forwards;
+}
+
+@keyframes floatUp {
+  from {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.95;
+  }
+  to {
+    transform: translateY(-115vh) rotate(35deg);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 380px) {
+  .card {
+    padding: 26px 17px;
+  }
+
+  .message {
+    font-size: 15px;
+  }
+
+  button {
+    padding: 12px 18px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<main class="card">
+
+  <!-- PAGE 1: PROPOSAL -->
+  <section id="homePage" class="page active">
+
+    <div class="main-heart">💖</div>
+
+    <h1>Hey, Urvashi! 🌹</h1>
+
+    <p class="message">
+      There is something special I've been wanting to tell you.
+      <br><br>
+
+      You are such a sweet person, and having you in my life
+      has meant more to me than I can put into words. ✨
+      <br><br>
+
+      Today, I want to ask you something from my heart.
+    </p>
+
+    <div class="question">
+      Will you be mine? ❤️
+    </div>
+
+    <p class="message">
+      Whatever your answer is, please be honest.
+      Your feelings matter to me, and I will respect your choice. 💗
+    </p>
+
+    <div class="buttons">
+      <button class="yes-button" onclick="showPage('yesPage')">
+        YES ❤️
+      </button>
+
+      <button class="no-button" onclick="showPage('noPage')">
+        NO 🌷
+      </button>
+    </div>
+
+  </section>
+
+
+  <!-- PAGE 2: YES RESPONSE -->
+  <section id="yesPage" class="page">
+
+    <div class="main-heart">🥹❤️🌹</div>
+
+    <h1>You Made Me Happy!</h1>
+
+    <h2>Thank You, Urvashi! 💖</h2>
+
+    <p class="message">
+      You have no idea how happy this makes me.
+      Thank you for giving me this beautiful chance.
+      <br><br>
+
+      You are genuinely a special person to me, and I hope
+      we can create many beautiful memories together.
+      <br><br>
+
+      I hope this is the beginning of something beautiful,
+      filled with smiles, care, trust, and happiness. 💕
+    </p>
+
+    <div style="font-size:42px; margin-top:20px;">
+      💖 🫶 🌹
+    </div>
+
+    <p class="signature">
+      With a happy heart, just for you. 💌
+    </p>
+
+    <button class="back-button" onclick="showPage('homePage')">
+      ← Back
+    </button>
+
+  </section>
+
+
+  <!-- PAGE 3: NO RESPONSE -->
+  <section id="noPage" class="page">
+
+    <div class="main-heart">🥺💗🌷</div>
+
+    <h1>I'm Sorry❤️</h1>
+
+    <p class="message">
+      First of all, I'm sorry if my proposal made you feel
+      uncomfortable or put you in an awkward situation.
+      That was never my intention.
+      <br><br>
+    </p>
+
+    <p class="message2">
+      I think I already know your answer, and it's okay.
+      I respect your feelings, and I don't want you to feel
+      any pressure because of me.
+      <br><br>
+
+      Thank you so much for being such a sweet person
+      and for coming into my life. You have made a special
+      place in my heart, and I'll always be grateful for
+      the time and kindness you've shared with me. 🫶
+      <br><br>
+
+      And a very special thank you for helping me with my
+      wrist drop. What you did for me genuinely means a lot.
+      Maybe I can never fully explain how grateful I am,
+      but I'll always remember your kindness. ❤️
+      <br><br>
+    </p>
+
+    <!-- ADDED DINNER PARAGRAPH -->
+    <p class="message2">
+      And thank you for that dinner with you. 🥹❤️
+      Those two hours felt like heaven to me.
+      It was a small moment, but a memory I'll always treasure.
+      Thank you for making me so happy. 💗
+      <br><br>
+    </p>
+
+    <p class="message">
+      I'm sorry if I ever said or did anything that hurt you
+      or made you uncomfortable. I never wanted that.
+      <br><br>
+
+      Please take care of yourself, stay safe, stay happy,
+      and always keep that beautiful smile on your face.
+      I sincerely wish you happiness, success, and all the
+      beautiful things life has to offer. 🌸
+      <br><br>
+
+      Thank you for being such a wonderful person.
+      And thank you for being a part of my life. 💖
+    </p>
+
+    <div class="goodbye-panel">
+
+      <h1>GOODBYE,</h1>
+      <h1>DEVI ❤️</h1>
+
+      <p class="signature">
+        No regrets, no complaints—just beautiful memories
+        and a grateful heart.
+        <br><br>
+        Wishing you a lifetime of smiles. 🌷
+      </p>
+
+      <div style="font-size:38px; margin-top:20px;">
+        ❤️ 🥹 🌹
+      </div>
+
+    </div>
+
+    <p class="message" style="font-size:14px; color:#a34b70;">
+      No pressure. No hard feelings.
+      Just a sincere thank you for everything.
+      I'll always appreciate the kindness you've shown me. 💗
+    </p>
+
+    <button class="back-button" onclick="showPage('homePage')">
+      ← Back to Proposal
+    </button>
+
+  </section>
+
+
+  <p class="footer">
+    Made with ❤️, especially for You
+  </p>
+
+</main>
+
+
+<script>
+function showPage(pageId) {
+
+  // Hide every page
+  const pages = document.querySelectorAll(".page");
+
+  pages.forEach(function(page) {
+    page.classList.remove("active");
+  });
+
+  // Display the selected page
+  const selectedPage = document.getElementById(pageId);
+  selectedPage.classList.add("active");
+
+  // Scroll to the top after changing pages
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+
+  // Celebrate with hearts on the YES and NO pages
+  if (pageId === "yesPage") {
+    celebrateHearts(35);
+  } else if (pageId === "noPage") {
+    celebrateHearts(18);
+  }
+}
+
+
+// Create a floating heart
+function createHeart() {
+  const heart = document.createElement("span");
+
+  heart.className = "floating-heart";
+
+  const symbols = ["❤️", "💕", "💖", "💗", "💘", "🌹"];
+
+  heart.textContent =
+    symbols[Math.floor(Math.random() * symbols.length)];
+
+  heart.style.left = Math.random() * 100 + "vw";
+  heart.style.fontSize = (18 + Math.random() * 24) + "px";
+  heart.style.animationDuration =
+    (3.5 + Math.random() * 3.5) + "s";
+
+  document.body.appendChild(heart);
+
+  setTimeout(function() {
+    heart.remove();
+  }, 7500);
+}
+
+
+// Create multiple hearts for the celebration
+function celebrateHearts(count) {
+  for (let i = 0; i < count; i++) {
+    setTimeout(createHeart, i * 100);
+  }
+}
+
+
+// Gentle floating hearts in the background
+setInterval(createHeart, 850);
+</script>
+
+</body>
+</html>
